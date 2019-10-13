@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+  <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/intro"
+        android:checked="true"
+        android:title="Introduction to GW-BASIC"/>
+    <item
+        android:id="@+id/programs"
+        android:title="Programs"
+        android:checkable="false"/>
+    <item
+        android:id="@+id/cmd"
+        android:title="Commands"
+        android:checkable="false"/>
+
+  </group>
+
+
+</menu>

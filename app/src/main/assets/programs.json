@@ -1,0 +1,117 @@
+[
+  {
+    "name":" Print even numbers from 1 to 40",
+    "code":"10       CLS \n20      FOR B = 2 TO 40 STEP 2 \n30      PRINT B \n40      NEXT  B \n50      END",
+    "id":"0"
+},
+  {
+    "name":"Perimeter of the rectangular",
+    "code":"10    CLS \n20     INPUT “Length …=”;L \n30     INPUT  “Width …=”; W \n40     PERIMETER=  2* ( L+W) \n50     PRINT “ PERIMETER….. =”; PERIMETER \n60     END",
+    "id":"1"
+},
+  {
+    "name":"Square and cube of any number",
+    "code":"10    CLS \n20     INPUT “ Enter any No..…=”; N \n30     Sq = N*N \n40     Cub= N^3 \n50     PRINT “ Square….. =”; Sq \n60     PRINT “ Cube….. =”; Cub \n70      END",
+    "id":"2"
+},
+  {
+    "name":"Centigrade to Fahrenheit",
+    "code":"10    CLS \n20     INPUT “ Temperature in Centigrade :=”; C \n30     F = 9/5* C+32 \n40     PRINT “Temperature in Fahrenheit =”; F \n50     END",
+    "id":"3"
+},
+  {
+    "name":"Fahrenheit to Centigrade",
+    "code":"10    CLS \n20     INPUT “ Temperature in  Fahrenheit  :=”; F \n30     C = 5/9* ( F-32) \n40     PRINT “Temperature in Centigrade  =”; C \n50     END",
+    "id": "4"
+},
+  {
+    "name":"Draw a Triangle.",
+    "code":"10    CLS \n20     SCREEN 2 \n30     LINE  (110,50)- (160,100) \n40     LINE  (60,100)- (160,100) \n50     LINE  (110,50)- (60,100) \n60     END",
+    "id":"5"
+},
+  {
+    "name":"Draw a Rectangle.",
+    "code":"10    CLS \n20     SCREEN 2 \n30     LINE  (70,80)- (190,170),,B \n40        END",
+    "id":"6"
+},
+  {
+    "name":"Draw a circle in a square.",
+    "code":"10    CLS \n20     SCREEN 2 \n30      CIRCLE  ( 100,100), 50 \n40      LINE ( 168,35)- (472,165),,B \n50      END",
+    "id":"7"
+},
+  {
+    "name":"Add 15+ 30+20+325.",
+    "code":"10    CLS \n20     READ A,B,C,D \n30     SUM= A+B+C+D \n40      PRINT “SUM OF 15,30,20 AND 325 IS…=”; SUM \n50      DATA 15,30,20,325 \n60       END",
+    "id":"8"
+},
+  {
+    "name":"Print all odd numbers from 1 to 100.",
+    "code":"10    CLS \n20    FOR N = 1 TO 100 STEP 2 \n30    PRINT       N \n40     NEXT   N \n50      END",
+    "id":"9"
+},
+  {
+  "name":"Print all even numbers from 2 to 100.",
+  "code":"10    CLS \n20    FOR  B =  2 TO 100 STEP 2 \n30    PRINT       B \n40     NEXT   B \n50      END",
+  "id":"10"
+},
+  {
+  "name":"Print your name five times using FOR-NEXT Loop.",
+  "code":"10    CLS \n20    FOR   N =1 TO 5 \n30    PRINT    “Umair Ayub” \n40     NEXT   N \n50      END",
+  "id":"11"
+},
+  {
+  "name":"Calculate the area of a circle.",
+  "code":"10 CLS  \n20 INPUT “Radius …=”,R:AREA = 3.14*R*R \n30  PRINT “ AREA… =”;AREA \n40 END ",
+  "id":"12"
+},
+  {
+  "name":"Draw a circle.",
+  "code":"10    CLS \n20     SCREEN 2 \n30      CIRCLE  ( 100,100), 50 \n40      END",
+  "id":"13"
+},
+  {
+  "name":"Greater Number",
+  "code":"10 CLS \n20 A=78 \n30 B=33 \n40 C=35 \n50 IF A>B THEN GOTO 60 ELSE GOTO 70 \n60 IF B>C THEN PRINT A;”IS THE GREATEST ONE”:END ELSE PRINT C;”IS THE GREATEST ONE”:END \n70 IF A>C THEN PRINT B;”IS THE GREATEST ONE”:END ELSE PRINT C;”IS THE GREATEST ONE” \n80 END",
+  "id":"14"
+},
+  {
+  "name":"Reverse the Text",
+  "code":"10 INPUT “ENTER ANY STRING“ ;ST$ \n20 FOR J=LEN(ST$) TO 1 STEP -1\n30 PRINT MID$(ST$,J,1);\n40 NEXT J\n50 END",
+  "id":"15"
+},
+  {
+    "name":"Random Subjects",
+    "code":"10 RANDOMIZE TIMER \n20 DIM SUB$(5) \n30 FOR K=0 TO 4 \n40 INPUT SUB$(K) \n50 NEXT K \n60 PRINT “RANDOMLY SELECTED SUBJECT IS “;SUB$(INT(RND*5)) \n70 END",
+    "id":"16"
+  },
+    {
+    "name":"Sort the Numbers",
+    "code":"10 DIM NUM(5) \n20 FOR K=0 TO 4 \n30 INPUT NUM(K) \n40 NEXT K \n50 FOR I=1 TO 4 \n60 FOR J=0 TO 4-I \n70 IF NUM(J) > NUM(J+1) THEN LET TMP=NUM(J):NUM(J)=NUM(J+1):NUM(J+1)=TMP \n80 NEXT J \n90 NEXT I \n100 PRINT ”NUMBERS IN ASCENDING ORDER ARE” \n110 FOR H=0 TO 4 \n120 PRINT NUM(H) \n130 NEXT H \n140 PRINT ”THE SMALLEST ELEMENT IS ”;NUM(0) \n150 PRINT ”THE LARGEST ELEMENT IS ”;NUM(4) \n160 END" ,
+    "id":"17"
+  },
+  {
+  "name":"Currency Coverter",
+  "code":"10 CURRENCY CONVERSION \n20 CLS \n30 INPUT “ENTER AMOUNT IN DOLLARS”;D \n40 INPUT “ENTER AMOUNTIN RUPEE”;R \n50 LET RUP = D*55 \n60 LET DOL = R/55 \n70 PRINT TAB(14); “PROGRAM TO CONVERT CURRNCY RATES”\n 80 PRINT TAB(14) “AMOUNT IN DOLLARS”;D \n90 PRINT TAB(14); “CONVERTED IN RUPEES”;RUP \n100 PRINT TAB(14) “AMOUNT IN RUPEES”;R \n110 PRINT TAB(14); “CONVERTED IN DOLLARS”;DOL \n120 END ",
+  "id":"18"
+},
+  {
+  "name":"ELECTRICITY BILL",
+  "code":"10 ELECTRICITY BILL \n20 CLS \n30 INPUT “ENTER METER NUMBER”;MN$ \n40 INPUT “ENTER PRESENT READING;PR \n50 INPUT “ENTER PREVIOUS READING”;P \n60 LET UC=PR-P \n70 LET AMT=UC*1.25 \n80 PRINT TAB(14); “##### METER NUMBER######” \n90 PRINT TAB(14) “METER NUMBER”;MN$ \n100 PRINT TAB(14); “PRESENT READING”;PR \n110 PRINT TAB(14); “PREVIOUS READING”;P \n120 PRINT TAB(14) “UNIT CONSUMED”;UC \n130 PRINT TAB(14); “AMOUNT CHARGE”;AMT \n140 END",
+  "id":"19"
+},
+  {
+  "name":"BIO-DATA",
+  "code":"10 BIO-DATA \n20 CLS \n30 INPUT “ENTER STUDENT NAME”:N$ \n40 INPUT “ENTER FAHTERS NAME”:F$ \n50 INPUT “ENTER DATE OF BIRTH”:D$ \n60 INPUT “ENTER QUALIFICATION”:Q$ \n70 INPUT “ENTER STUDENT SEX”:S$ \n80 INPUT “ENTER NATIONLAITY”;P$ \n90 INPUT “ENTER RELIGON”:R$ \n100 CLS \n110 PRINT TAB(15) “BIO-DATA” \n120 PRINT TAB(12)“STUDENT NAME= =”:N$ \n130 PRINT TAB(12)“FAHTERS NAME= =”:F$ \n140 PRINT TAB(12)“DATE OF BIRTH= =”:D$ \n150 PRINT TAB(12)“QUALIFICATION =”:Q$ \n160 PRINT TAB(12)“SEX= = = = = = = =”:S$ \n170 PRINT TAB(12)“NATIONLAITY= = =”;P$ \n180 PRINT TAB(12)“RELIGON= = = = =”:R$ \n190 END",
+  "id":"20"
+},
+  {
+    "name":"Salary-Sheet",
+    "code":"10 SALARY SHEET \n20 CLS \n30 INPUT “ENTER EMPLOYEE NAME”;EN$ \n40 INPUT “ENTER EMPLOYEE DESIGNATION”;D$ \n50 INPUT “ENTER BASIC SALARY”;BS \n60 INPUT “ENTER TOTAL ALLOWANCE”;TA \n70 INPUT “ENTER TOTAL DEDUCTION”;TD \n80 LET TS = BS+TA-TD \n90 PRINT TAB(14); “EMPLOYEE SALARY SHEET” \n100 PRINT TAB(14) “EMPLOYEE NAME”;EN$ \n110 PRINT TAB(14); “EMPLOYEE DESIGNATION”;D$ \n120 PRINT TAB(14); “EMPLOYEE BASIC SALARY”;BS \n130 PRINT TAB(14) “TOTAL ALLOWANCE”;TA \n140 PRINT TAB(14); “TOTAL DEDUCTION”;TD \n150 PRINT TAB(14); “TOTAL SALARY”;TS \n160 END",
+    "id":"21"
+  },
+  {
+  "name":"Calculate the Number of Students",
+  "code":"STUDENT’S RECORD) \n20 CLS \n30 DIM N$(10), S$(10) \n40 FOR A=1 TO 10 \n50 INPUT “ENTER STUDENT NAME”;N$(A)\n40 INPUT “ENTER STUDENTS GENDER(A) \n50 NEXT A \n60 CLS \n70 PRINT “S.NO”,”NAME”,”SEX” \n80 FOR B=1 TO 10 \n90 PRINT B, N$(B), S$(B) \n100 IF S$(B)=”MALE” THEN M = M + 1 \n110 IF S$(B)=”FEMALE” THEN F=F+1 \n120 PRINT “TOTAL NUMBER OF MALE STUDENTS ARE:”;M \n130 PRINT “TOTAL NUMBER OF FEMALE STUDENTS ARE:”;F \n140 END",
+  "id":"22"
+}
+]
